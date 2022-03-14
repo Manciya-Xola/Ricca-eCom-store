@@ -233,6 +233,136 @@ input[type=checkbox]{
 }
 
 /* end of the banner */
+
+/* start of product card */
+.product-card{
+  width: 100%;
+  height: 327px;
+  display: flex;
+  justify-content: center;
+  margin: 50px 0;
+}
+.product-container{
+  width: 791px;
+  height: 327px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.product-container-1{
+  width: 791px;
+  height: 327px;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+}
+.image{
+  width: 395px;
+  height: 325px;
+}
+.image img{
+  width: 395px;
+  height: 325px;
+}
+.description{
+  width: 395px;
+  height: 325px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px 50px;
+}
+.description .title-desc{
+  display: flex;
+  flex-direction: column;
+}
+.title-desc .title{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 309px;
+}
+.title-desc .title h1{
+  font-family: Roboto;
+  font-size: 38px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 45px;
+  letter-spacing: 0em;
+  text-align: left;
+  margin-bottom: 20px;
+}
+.title-desc .short-desc{
+  font-family: Roboto;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 26px;
+  letter-spacing: em;
+  text-align: left;
+}
+.description .price-cart{
+  width: 300px;
+  height: 60px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.price-cart .price{
+  height: 60px;
+}
+.price-cart .like-cart{
+  margin-top: 30px;
+}
+.price-cart .price .previous{
+  margin: 0;
+  height: 30px;
+  text-decoration: line-through;
+  font-family: Roboto;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 33px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #8C8C8C;
+}
+.price-cart .price .current{
+  font-family: "Roboto";
+  font-size: 29px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 38px;
+  letter-spacing: 0em;
+  text-align: left;
+  height: 34px;
+}
+.load-more{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.load-more .promo-btn button {
+  /* position: absolute; */
+  width: 374px;
+  height: 80px;
+  left: calc(50% - 374px/2);
+  top: calc(50% - 80px/2 + 82px);
+  color: #fff;
+  border: none;
+  box-sizing: border-box;
+  background: #C48B98;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 26px;
+}
+.load-more .promo-btn button:hover{
+  background: #DAA0AD;
+}
+/* end of product card */
 /* Start of the footer */
 footer{
   position:relative;
