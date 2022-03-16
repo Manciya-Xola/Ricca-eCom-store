@@ -1,3 +1,12 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+:root{
+  --nav-bg-color: #FFFFFF;
+  --footer-bg-color:#FFFFFF;
+  --main-bg-color: ##F9F9F9;
+  --banner-bg-color: #01213F;
+  --h1-color: #fff;
+  --h4-color: #fff;
+}
 *{
   margin: 0;
   padding: 0;
@@ -12,10 +21,16 @@ html, body {
   margin: 0;
 }
 /* Navbar styling */
-a{
+.menu a{
   text-decoration: none;
+  cursor: pointer;
+  color: #000;
 }
-li{
+.menu a:hover{
+  background-color: var(--banner-bg-color);
+  color: var(--h1-color);
+}
+.menu li{
   list-style: none;
 }
 nav{
@@ -23,9 +38,14 @@ nav{
   align-items: center;
   justify-content: space-between;
   padding: 20px;
+  background: var(--nav-bg-color);
 }
 .logo{
   font-size: 32px;
+}
+.logo a{
+  text-decoration: none;
+  color: #000;
 }
 .menu {
   display: flex;
@@ -47,7 +67,7 @@ input[type=checkbox]{
   .menu { 
     display:none;
     position: absolute;
-    background-color:#fff;
+    /* background-color:#fff; */
     right: 0;
     left: 0;
     text-align: center;
@@ -55,7 +75,7 @@ input[type=checkbox]{
   }
   .menu li:hover {
     display: inline-block;
-    background-color:#fff;
+    /* background-color:#fff; */
     transition: 0.3s ease;
   }
   .menu li + li {
@@ -70,10 +90,15 @@ input[type=checkbox]{
 }
 /* End of navbar */
 
+/* Main styling */
+main{
+  color: var(--main-bg-color);
+  padding: 0px 10px;
+}
+/* end of main */
 /* Start of the banner */
 .banner{
-  /* width: 100%; */
-  background-color: #01213F;
+  background-color: var(--banner-bg-color);
   height: 460px;
   position: relative;
   display: flex;
@@ -107,7 +132,7 @@ input[type=checkbox]{
   font-style: normal;
   font-size: 72px;
   line-height: 84.38px;
-  color: #fff;
+  color: var(--h1-color);
 }
 .banner .outline-container h2{
   font: "Roboto";
@@ -160,6 +185,10 @@ input[type=checkbox]{
   text-align: center;
 }
 @media screen and (max-width: 768px) {
+  main{
+    color: var(--main-bg-color);
+    padding: 0px 0px;
+  }
   .banner{
     padding: 50px 22px;
     width: 100%;
@@ -197,6 +226,7 @@ input[type=checkbox]{
     font-style: normal;
     font-size: 45px;
     line-height: 52.73px;
+    color: var(--h1-color);
   }
   .banner .outline-container h2{
     font: "Roboto";
@@ -291,6 +321,7 @@ input[type=checkbox]{
   letter-spacing: 0em;
   text-align: left;
   margin-bottom: 20px;
+  color: #000;
 }
 .title-desc .short-desc{
   font-family: Roboto;
@@ -392,12 +423,12 @@ footer{
   position:relative;
   bottom:0;
   width:100%;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding: 0px 67px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background: var(--footer-bg-color);
 }
 footer ul{
   padding: 50px 20px;
@@ -411,7 +442,7 @@ footer ul{
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 footer ul li h2{
-  font-family: 'Open Sans Condensed', sans-serif;
+  font-family: 'Roboto';
   color: #000;
   font-size: 16px;
   font-weight: 400;
