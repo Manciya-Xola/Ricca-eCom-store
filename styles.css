@@ -271,6 +271,7 @@ main{
   display: flex;
   justify-content: center;
   margin: 50px 0;
+  
 }
 .product-container{
   width: 791px;
@@ -278,6 +279,8 @@ main{
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  box-shadow: 0px 15px 30px 7px rgba(0, 0, 0, 0.05);
+  border-radius: 6px;
 }
 .product-container-1{
   width: 791px;
@@ -285,6 +288,8 @@ main{
   display: flex;
   flex-direction: row-reverse;
   justify-content: space-between;
+  box-shadow: 0px 15px 30px 7px rgba(0, 0, 0, 0.05);
+  border-radius: 6px;
 }
 .image{
   width: 395px;
@@ -403,7 +408,7 @@ main{
   }
   .product-container{
     width: 400px;
-    height: 600x;
+    height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
