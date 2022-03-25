@@ -1,0 +1,562 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap');
+
+:root{
+  --nav-bg-color: #FFFFFF;
+  --footer-bg-color:#FFFFFF;
+  --main-bg-color: ##F9F9F9;
+  --banner-bg-color: #01213F;
+  --h1-color: #fff;
+  --h4-color: #fff;
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  overflow: auto;
+}
+html, body {
+  margin: 0;
+}
+/* Navbar styling */
+header{
+  height: 108px;
+  padding: 0px 70px;
+  min-width: 414px;
+}
+nav{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.logo img{
+  width: 114px;
+  height: 38px;
+}
+.menu li{
+  list-style: none;
+  width: 167px;
+  height: 108px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px 14px;
+}
+
+.menu {
+  display: flex;
+  gap: 1em;
+  font-size: 18px;
+}
+.menu a{
+  font-family: 'Roboto';
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 26px;
+  text-decoration: none;
+  cursor: pointer;
+  color: #000;
+}
+.menu a:hover{
+  background-color: var(--banner-bg-color);
+  color: var(--h1-color);
+}
+
+@media (max-width: 818px) {
+  header{
+    height: 287px;
+    margin-bottom: 52px;
+  }
+  nav{
+    width: 100%;
+    height: 287px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 36px;
+    margin-bottom: 24px;
+  }
+  .logo{
+    margin-bottom: 50px;
+  }
+  .nav-links .menu{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .menu li{
+    list-style: none;
+    width: 144px;
+    height: 46px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px px;
+  }
+  .menu li a{
+    font-size: 22px;
+    font-family: 'Roboto';
+    font-weight: 400;
+    line-height: 26px;
+    color: #000;
+  }
+}
+/* End of navbar */
+
+/* Main styling */
+main{
+  color: var(--main-bg-color);
+  min-width: 414px;
+}
+/* end of main */
+/* Start of the banner */
+.banner{
+  width: 100%;
+  background-color: var(--banner-bg-color);
+  height: 460px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 56px 440px;
+}
+.outline-container{
+  border: 8px solid #FFFFFF;
+  width: 560px;
+  height: 348px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+.promo-name{
+  width: 450px;
+  height: 118.83px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 31px;
+}
+.banner .outline-container h1{
+  font: "Roboto";
+  font-weight: 400;
+  font-style: normal;
+  font-size: 72px;
+  line-height: 84.38px;
+  color: var(--h1-color);
+}
+.banner .outline-container h2{
+  font: "Roboto";
+  font-weight: 400;
+  font-style: normal;
+  font-size: 50px;
+  line-height: 59px;
+  color: #fff;
+}
+.banner .outline-container button {
+  /* position: absolute; */
+  width: 374px;
+  height: 80px;
+  left: calc(50% - 374px/2);
+  top: calc(50% - 80px/2 + 82px);
+  color: #C48B98;
+  border: 4px solid #C48B98;
+  box-sizing: border-box;
+  background-color: transparent;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 26px;
+}
+.banner .outline-container button:hover::after {
+  /* position: absolute; */
+  content:"LOAD MORE";
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 26px;
+}
+.banner .outline-container button:hover span {
+  display: none
+}
+.promo-btn{
+  width: 374px;
+  height: 80px;
+  left: calc(50% - 374px/2);
+  top: calc(50% - 80px/2 + 82px);
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 26px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+@media screen and (max-width: 768px) {
+  main{
+    color: var(--main-bg-color);
+    padding: 0px 0px;
+  }
+  .banner{
+    padding: 50px 22px;
+    width: 100%;
+    height: 399px;
+    min-width: 414px;
+  }
+  .outline-container{
+    width: 368px;
+    height: 296px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .promo-name{
+    width: 296px;
+    height: 112px;
+  }
+  .banner .outline-container h1{
+    font-weight: 500;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-size: 45px;
+    line-height: 52.73px;
+    color: var(--h1-color);
+  }
+  .banner .outline-container h2{
+    font-family: "Roboto";
+    font-weight: 400;
+    font-size: 38px;
+    line-height: 59px;
+    color: #fff;
+  }
+  .promo-btn{
+    width: 246px;
+    height: 76px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 26px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+  }
+
+  .banner .outline-container button {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 26px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    color: #C48B98;
+  }
+  .banner .outline-container button:hover::after {
+    /* position: absolute; */
+    content:"LOAD MORE";
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 26px;
+  }
+  .banner .outline-container button:hover span {
+    display: none
+  }
+}
+
+/* end of the banner */
+
+/* start of product card */
+.products{
+  margin-top: 20px;
+}
+.product-card{
+  width: 100%;
+  height: 327px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 25px;
+}
+.product-container{
+  width: 791px;
+  height: 327px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  box-shadow: 0px 15px 30px 7px rgba(0, 0, 0, 0.05);
+  border-radius: 6px;
+}
+.product-container-1{
+  width: 791px;
+  height: 327px;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  box-shadow: 0px 15px 30px 7px rgba(0, 0, 0, 0.05);
+  border-radius: 6px;
+}
+.image{
+  width: 395px;
+  height: 325px;
+}
+.image img{
+  width: 395px;
+  height: 325px;
+}
+.description{
+  width: 395px;
+  height: 325px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px 50px;
+}
+.description .title-desc{
+  display: flex;
+  flex-direction: column;
+}
+.title-desc .title{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 309px;
+}
+/* .title-desc .title h3{
+  font-family: Roboto;
+  font-size: 38px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 45px;
+  letter-spacing: 0em;
+  text-align: left;
+  margin-bottom: 20px;
+  color: #000;
+} */
+.title-desc .short-desc{
+  font-family: Roboto;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 26px;
+  letter-spacing: em;
+  text-align: left;
+}
+.description .price-cart{
+  width: 300px;
+  height: 60px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.price-cart .price{
+  height: 60px;
+}
+.price-cart .like-cart{
+  margin-top: 30px;
+}
+.price-cart .price .previous{
+  margin: 0;
+  height: 30px;
+  text-decoration: line-through;
+  font-family: Roboto;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 33px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #8C8C8C;
+}
+.price-cart .price .current{
+  font-family: "Roboto";
+  font-size: 29px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 38px;
+  letter-spacing: 0em;
+  text-align: left;
+  height: 34px;
+}
+.load-more{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 32px;
+}
+.load-more .promo-btn button {
+  width: 374px;
+  height: 80px;
+  color: #fff;
+  border: none;
+  box-sizing: border-box;
+  background: #C48B98;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 26px;
+}
+.load-more .promo-btn button:hover{
+  background: #DAA0AD;
+}
+@media screen and (max-width: 768px) {
+  main{
+    margin: 0px;
+  }
+  .products ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+  }
+  .products ul li{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+  .product-card{
+    /* background-color: red; */
+    width: 100%;
+    height: 508px;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    padding: 0px;
+  }
+  .product-container{
+    width: 374px;
+    height: 508px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-shadow: 0px 15px 30px 7px rgba(0, 0, 0, 0.05);
+    border-radius: 6px;
+  }
+  .product-container-1{
+    width: 374px;
+    height: 508px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-shadow: 0px 15px 30px 7px rgba(0, 0, 0, 0.05);
+    border-radius: 6px;
+  }
+  .product-container img{
+    width: 374px;
+    height: 310px;
+  }.product-container-1 img{
+    width: 374px;
+    height: 310px;
+  }
+  .title h3{
+    display:inline-block;
+    width: 322px;
+    height: 45px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 38px;
+    line-height: 45px;
+  }
+  .description{
+    height: 198px;
+  }
+  .short-desc{
+    display: none;
+  }
+}
+/* end of product card */
+
+/* Start of the footer */
+footer{
+  min-width: 414px;
+  height: 414px;
+  bottom:0;
+  width: 100%;
+  padding: 0px 67px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: var(--footer-bg-color);
+}
+footer ul{
+  padding-top: 50px;
+  list-style: none;
+  padding-left: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  border-bottom: 1px solid #555;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+footer ul li h2{
+  font-family: 'Roboto';
+  color: #000;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18.75px;
+}
+footer ul li ul{
+  list-style: none;
+  padding: 20px 0;
+  display: flex;
+  flex-direction: column;
+}
+footer ul li ul li {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 18px;
+  color: #000;
+  margin-bottom: 20px;
+}
+.bottom-ricca{
+  font-size: 36px;
+  line-height: 45px;
+  font-weight: 400;
+  font: "Quicksand";
+  text-align: center;
+  margin-bottom: 31px;
+  width: 100%;
+}
+@media (max-width: 818px) {
+  footer{
+    /* height: 688px; */
+    display: block;
+  }
+	footer ul{
+		display: block;
+		width: 100%;
+    padding-top: 50px;
+		/* margin-bottom: 40px; */
+		text-align: center;
+	}
+
+	footer {
+		margin-left: 0;
+	}
+
+}
